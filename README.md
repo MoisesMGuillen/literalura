@@ -22,7 +22,7 @@ Antes de ejecutar la aplicación, asegúrate de tener instalados:
 - Jackson para procesar JSON.
 - HttpClient para interactuar con la API externa.
 
-# Estructura del proyecto
+## Estructura del proyecto
 ## Principales
 ### LiteraluraApplication
 - Clase principal que inicializa el proyecto y muestra el menú interactivo.
@@ -55,7 +55,7 @@ Proporciona métodos personalizados para buscar autores en la base de datos.
 ### LibrosRepositorio
 Proporciona métodos para buscar y filtrar libros.
 
-# Instalación y ejecución
+## Instalación y ejecución
 1. Clona el repositorio
 ```
 
@@ -75,7 +75,7 @@ mvn spring-boot:run
 
 ```
 
-# Uso
+## Uso
 Al iniciar, se mostrará un menú interactivo con las siguientes opciones:
 
 ```
@@ -107,15 +107,15 @@ Elija la opción a través de un número:
   - **pt - portugués**
   - **it - italiano**
 
-# Detalles técnicos
+## Detalles técnicos
 - **Base de datos**: Se utiliza H2 Database para almacenar autores y libros.
 - **Consulta a API externa:** La clase ConsultasApi utiliza HttpClient para interactuar con Gutenberg Books API y procesa los resultados con Jackson.
 - **Gestión de relaciones:** Se usa una relación One-to-Many entre Autor y Libro.
 
-# Limitaciones actuales
+## Limitaciones actuales
 - Solo soporta los idiomas enumerados previamente
 - La API externa retorna solo el primer resultado de la búsqueda del libro
 
-# API externa
+## API externa
 El API utilizada es la de **Gutendex**. Puede consultarse en el siguiente enlace:
 https://gutendex.com/
